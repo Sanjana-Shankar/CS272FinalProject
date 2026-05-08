@@ -45,7 +45,8 @@ The repository is organized by project phase:
   Build on the SFT checkpoint using GRPO and verifiable answer/format rewards.
 
 ---
-
+# Phase 1: Baseline Evaluation
+---
 # Phase 2: SFT Warm-Up
 
 This phase performs supervised fine-tuning (SFT) as a warm-up step before GRPO. The goal is to adapt the raw `Qwen/Qwen2.5-1.5B` base model toward structured mathematical reasoning outputs using chain-of-thought style examples from NuminaMath-CoT.
@@ -235,3 +236,7 @@ For interactive debugging and reviewing outputs, the notebook is recommended. Fo
 The SFT warm-up improved output stability compared with the original chat-style format. The model became more likely to generate math-solution-style text and `<think>` blocks. However, exact-answer accuracy remained poor under the limited-compute setting. The model frequently made arithmetic mistakes, changed numbers from the original problem, or failed to complete the reasoning block.
 
 This result motivates Phase 3 GRPO, where verifiable answer rewards and format rewards can directly optimize the behaviors that SFT alone did not reliably learn.
+
+---
+# Phase 3: GRPO Training
+---
