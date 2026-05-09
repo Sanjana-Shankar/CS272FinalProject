@@ -1,0 +1,769 @@
+{
+  "metrics": {
+    "mode": "few_shot",
+    "benchmark": "gsm8k",
+    "n_samples": 500,
+    "pass_at_1": 0.592,
+    "pass_at_8": 0.88,
+    "think_tag_rate": 0.0,
+    "avg_think_length_words": 0.0,
+    "empty_think_rate": 0.0,
+    "avg_response_length_words": 270.412,
+    "pct_with_reasoning": 0.998,
+    "pct_with_think_tags": 0.0,
+    "generation_time_s": 2633.9145562648773,
+    "throughput_samples_per_s": 1.5186521485618547
+  },
+  "samples": [
+    {
+      "question": "Darrell and Allen's ages are in the ratio of 7:11. If their total age now is 162, calculate Allen's ...",
+      "gold": "109",
+      "predictions": [
+        "109",
+        "109",
+        "109"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Let's use algebra for this one. Suppose Darrell's age is 7x and Allen's age is 11x. Then, 7x + 11x = 162. This simplifies to 18x = 162. So, x = 162 / 18 = 9. Allen's current age is 11x = 11 * 9 = 99 "
+    },
+    {
+      "question": "Lorraine and Colleen are trading stickers for buttons. Each large sticker is worth a large button or...",
+      "gold": "89",
+      "predictions": [
+        "75.67",
+        "35.66",
+        "97"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Lorraine starts with 30 small stickers. If she trades 90% of them, that means she trades 0.9 * 30 = 27 small stickers. 27 small stickers will be worth 27 / 3 = 9 large buttons. Lorraine starts with 4"
+    },
+    {
+      "question": "Indras has 6 letters in her name. Her sister's name has 4 more letters than half of the letters in I...",
+      "gold": "13",
+      "predictions": [
+        "13",
+        "13",
+        "13"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Indras has 6 letters. 6 / 2 = 3. Her sister's name has 3 + 4 = 7 letters. So Indras and her sister have 6 + 7 = 13 letters.\n#### 13\n\nProblem: There are 300 students in a university. 75% of them are f"
+    },
+    {
+      "question": "Bethany can run 10 laps on the track in one hour.  Trey can run 4 more laps than Bethany.  Shaelyn c...",
+      "gold": "5",
+      "predictions": [
+        "5",
+        "5",
+        "5"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Bethany can run 10 laps. Trey can run 4 more laps than Bethany. 10 + 4 = 14. Shaelyn can run half as many laps as Trey. 14 / 2 = 7. Quinn can run 2 fewer laps than Shaelyn. 7 - 2 = 5. Bethany can run"
+    },
+    {
+      "question": "An ice cream truck is traveling through a neighborhood. Children from various homes have started cha...",
+      "gold": "25",
+      "predictions": [
+        "15",
+        "25",
+        "45"
+      ],
+      "corrects": [
+        false,
+        true,
+        false
+      ],
+      "completion_preview": " Originally, there were 5 children. On the second street, each child is joined by another child, so that's another 5 children. That makes 5 + 5 = 10 children. On the third street, each child in the ex"
+    },
+    {
+      "question": "Kim sleepwalks, to monitor her sleeping hours, she installs a camera in her room. Kim usually goes t...",
+      "gold": "452",
+      "predictions": [
+        "110",
+        "434",
+        "102"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " She went to sleep at 10 and woke up at 6. So she slept for 6 - 10 = 4 hours. Convert that to minutes. 4 hours * 60 = 240 minutes. She woke up 5 minutes early, so she was sleepwalking for 240 - 5 = 23"
+    },
+    {
+      "question": "Gunther, the gorilla, had 48 bananas hidden under a fern branch.  When Gunther wasn't looking, Arnol...",
+      "gold": "43",
+      "predictions": [
+        "18",
+        "67",
+        "43"
+      ],
+      "corrects": [
+        false,
+        false,
+        true
+      ],
+      "completion_preview": " On the first day, Arnold stole half of the bananas. So he stole 48 / 2 = 24 bananas. That leaves Gunther with 48 - 24 = 24 bananas. On the second day, Arnold stole 12 more bananas. That leaves Gunthe"
+    },
+    {
+      "question": "Jonathan has 2/3 as many measuring spoons as measuring cups. If he has two dozen cups and gifts Pedr...",
+      "gold": "34",
+      "predictions": [
+        "10",
+        "0",
+        "10"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Jonathan has 2 dozen cups, which is 2 * 12 = 24 cups. He has 2/3 as many spoons as cups, so he has 2/3 * 24 = 16 spoons. After giving 6 spoons to Pedro, Jonathan has 16 - 6 = 10 spoons remaining.\n###"
+    },
+    {
+      "question": "Martha's cat is 5 times faster than her turtle. If the cat can run 15 feet/second, how many feet can...",
+      "gold": "120",
+      "predictions": [
+        "120",
+        "120",
+        "120"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Martha's cat runs 15 feet per second. So in 40 seconds, the cat can run 15 * 40 = 600 feet. Martha's turtle is 5 times slower than the cat, so it crawls 15 / 5 = 3 feet per second. In 40 seconds, the"
+    },
+    {
+      "question": "An airport has only 2 planes that fly multiple times a day. Each day, the first plane goes to Greece...",
+      "gold": "11",
+      "predictions": [
+        "44",
+        "33",
+        "5"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " The first plane flies to Greece for 3/4 of its flights, and the remaining flights are split equally between flights to France and flights to Germany. So, the first plane flies to France and Germany f"
+    },
+    {
+      "question": "As Sally walked to school, she was holding the strings to 25 red balloons, 7 green balloons, and 12 ...",
+      "gold": "34",
+      "predictions": [
+        "27",
+        "41",
+        "29"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Sally had 25 red balloons, 7 green balloons, and 12 yellow balloons. 40% of the red balloons burst, so that's 25 * .4 = 10 balloons. After the burst, she had 25 - 10 = 15 red balloons. Sally accident"
+    },
+    {
+      "question": "Kira bought 3 apples, 5 bananas and 6 oranges at the grocery store. Lola ate 2 pieces of the fruit. ...",
+      "gold": "12",
+      "predictions": [
+        "12",
+        "12",
+        "12"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Kira bought 3 apples, 5 bananas and 6 oranges. So in total, she had 3 + 5 + 6 = 14 pieces of fruit. Lola ate 2 pieces, so there are 14 - 2 = 12 pieces left.\n#### 12\n\nProblem: There are 1500 jelly bea"
+    },
+    {
+      "question": "I have 10 liters of orange drink that are two-thirds water and I wish to add it to 15 liters of pine...",
+      "gold": "15",
+      "predictions": [
+        "9",
+        "15.67",
+        "79"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " I started with 10 liters of orange drink, which is two-thirds water. So 2/3 of 10 liters is 2/3 * 10 = 20/3 = 6.67 liters of water. So I added 6.67 liters of water to 10 liters of orange drink, for a"
+    },
+    {
+      "question": "Jill and her friends watch 4 movies every Saturday and half the number of movies on Sunday than on S...",
+      "gold": "24",
+      "predictions": [
+        "24",
+        "24",
+        "24"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Each weekend, they watch 4 movies on Saturday and 4 / 2 = 2 movies on Sunday. So they watch 4 + 2 = 6 movies each weekend. In 4 weeks, they will watch 6 * 4 = 24 movies.\n#### 24\n\nProblem: There are 4"
+    },
+    {
+      "question": "Mark took a test yesterday that consisted of 75 questions. He completed the test at a rate of 5 ques...",
+      "gold": "105",
+      "predictions": [
+        "14",
+        "21",
+        "40"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Mark took 75 questions at a rate of 5 questions per hour. So it took him 75 / 5 = 15 hours to complete the first test. Since he had 8 hours to complete the test, he left 15 - 8 = 7 questions incomple"
+    },
+    {
+      "question": "After transferring to a new school, Amy made 20 more friends than Lily. If Lily made 50 friends, how...",
+      "gold": "120",
+      "predictions": [
+        "120",
+        "120",
+        "120"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Lily made 50 friends. Amy made 20 more than Lily, so Amy made 50 + 20 = 70 friends. Together, they have 50 + 70 = 120 friends.\n#### 120\n\nProblem: There are 46 dogs in the village park. If 34 of them "
+    },
+    {
+      "question": "A basket contains 25 oranges among which 1 is bad, 20% are unripe, 2 are sour and the rest are good....",
+      "gold": "17",
+      "predictions": [
+        "8",
+        "2",
+        "18"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " There are 25 oranges in total. 20% of them are unripe, so 20/100 * 25 = 5 oranges are unripe. So there are 20 - 5 = 15 good oranges. 2 are sour and the rest are good. So there are 25 - 15 - 2 = 8 goo"
+    },
+    {
+      "question": "An eraser costs $2 and a pencil costs $3. How much do 6 erasers and 8 pencils cost?...",
+      "gold": "36",
+      "predictions": [
+        "36",
+        "36",
+        "36"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " 6 erasers will cost 6 * 2 = $12. 8 pencils will cost 8 * 3 = $24. So the total cost is 12 + 24 = $36.\n#### 36\n\nProblem: James has 7 notebooks. He bought 6 more. He lost 2 notebooks. How many notebook"
+    },
+    {
+      "question": "Tyrion changes his face mask two times every time he goes out. If he goes out three times a day, how...",
+      "gold": "12",
+      "predictions": [
+        "12",
+        "4",
+        "12"
+      ],
+      "corrects": [
+        true,
+        false,
+        true
+      ],
+      "completion_preview": " Tyrion changes his face mask 2 times each time he goes out. So in a day, he uses 2 * 3 = 6 masks. In 2 days, he uses 6 * 2 = 12 masks.\n#### 12\n\nProblem: If there are 60 cars in the parking lot and 30"
+    },
+    {
+      "question": "Max bought stamps at the post office. Some of the stamps had a snowflake design, some had a truck de...",
+      "gold": "45",
+      "predictions": [
+        "45",
+        "45",
+        "45"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Max bought 16 snowflake stamps. He bought 3 more truck stamps than snowflake stamps, so he bought 16 + 3 = 19 truck stamps. He bought 9 fewer rose stamps than truck stamps, so he bought 19 - 9 = 10 r"
+    },
+    {
+      "question": "While playing with her friends in their school playground, Katelyn saw 50 fairies flying above the n...",
+      "gold": "45",
+      "predictions": [
+        "-5",
+        "45",
+        "45"
+      ],
+      "corrects": [
+        false,
+        true,
+        true
+      ],
+      "completion_preview": " Katelyn saw 50 fairies flying above the nearby forest. Her friend saw half as many fairies as Katelyn saw, so her friend saw 50 / 2 = 25 fairies. After about twenty minutes, 25 fairies flew away. So "
+    },
+    {
+      "question": "Tracy used a piece of wire 4 feet long to support tomato plants in the garden. The wire was cut into...",
+      "gold": "8",
+      "predictions": [
+        "8",
+        "8",
+        "8"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " 1 foot is equal to 12 inches. So 4 feet is equal to 4 * 12 = 48 inches. If the wire was cut into pieces of 6 inches, then 48 / 6 = 8 pieces were obtained.\n#### 8\n\nProblem: A bakery made 36 cupcakes f"
+    },
+    {
+      "question": "The school auditorium has 4 rows of seats. There are 18 seats in each row. One-fourth of the seats w...",
+      "gold": "36",
+      "predictions": [
+        "36",
+        "36",
+        "36"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " There are 4 rows with 18 seats in each row. So, there are 4 * 18 = 72 seats in total. One-fourth of the seats were occupied by the administrators. So, the administrators occupied 72 * 1/4 = 18 seats."
+    },
+    {
+      "question": "Ellen is on a diet. She eats two carrots, a salad, and a yogurt every day. The salad costs her $6, w...",
+      "gold": "1",
+      "predictions": [
+        "2",
+        "3",
+        "12"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " The salad is $6. The yogurt is half the price, so it costs $6 / 2 = $3. Ellen pays $11 for her goods. If we subtract the cost of the salad and yogurt, we have 11 - 6 - 3 = 2 left for the carrots. So,"
+    },
+    {
+      "question": "After scoring 14 points, Erin now has three times more points than Sara, who scored 8. How many poin...",
+      "gold": "18",
+      "predictions": [
+        "24",
+        "10",
+        "10"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " If Erin scored 14 points and had three times as many points as Sara, then Sara had 14 / 3 = 4.666667 points. Since Sara scored 8 points, Erin had 8 * 3 = 24 points before scoring 14.\n#### 24\n\nProblem"
+    },
+    {
+      "question": "Scarlett found an aquarium for $10.00 at a yard sale.  At the pet store, she bought 2 bags of rocks ...",
+      "gold": "33",
+      "predictions": [
+        "33",
+        "25",
+        "33"
+      ],
+      "corrects": [
+        true,
+        false,
+        true
+      ],
+      "completion_preview": " Scarlett bought 2 bags of rocks for $2.50 each, so that's 2 * $2.50 = $5.00. She also bought 3 pieces of coral at $2.00 apiece, so that's 3 * $2.00 = $6.00. She bought 20 fish at $0.50 each, so that'"
+    },
+    {
+      "question": "John collects garbage from 3 different apartment complexes.  The first two have 200 apartments each ...",
+      "gold": "1248",
+      "predictions": [
+        "3744",
+        "1248",
+        "1920"
+      ],
+      "corrects": [
+        false,
+        true,
+        false
+      ],
+      "completion_preview": " The first two apartment complexes have 200 apartments each. So, the total number of apartments in these two complexes is 200 * 2 = 400 apartments. The last apartment complex is 60% bigger than the ot"
+    },
+    {
+      "question": "Jerry is rolling a six-sided die. How much more likely is it (expressed as a percentage) that he rol...",
+      "gold": "25",
+      "predictions": [
+        "33.33",
+        "38.9",
+        "50"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Jerry can roll a number greater than 3 on a 6-sided die in 4 ways: 4, 5, or 6. So the probability is 4/6 = 2/3. To roll two even numbers in a row, Jerry can roll 2, 4, or 6, which is 3 ways. So the p"
+    },
+    {
+      "question": "Russell orders his favorite bagels online.  Each pack of bagels costs $10.00 and has 9 bagels in the...",
+      "gold": "1",
+      "predictions": [
+        "9",
+        "9",
+        "1"
+      ],
+      "corrects": [
+        false,
+        false,
+        true
+      ],
+      "completion_preview": " Each pack of bagels cost $10.00 and had 9 bagels. So, 10/9 = $1.11 per bagel. Russell ordered 4 packs of bagels. So, 4 * 10 = $40.00. He received a 10% discount on his order. So, 40 * 0.10 = $4.00 di"
+    },
+    {
+      "question": "Ian has a board that is 40 feet long. He decides to make a cut so he can have two pieces. The longer...",
+      "gold": "32",
+      "predictions": [
+        "32",
+        "32",
+        "32"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Let x be the length of the shorter piece. Then the longer piece is 4x. The total length of the board is 40, so x + 4x = 40. Combining like terms, 5x = 40. Dividing both sides by 5, x = 8. The shorter"
+    },
+    {
+      "question": "Imma has 3 cats. She feeds her cats twice a day with 60 grams of cat food. How many days will 720 gr...",
+      "gold": "2",
+      "predictions": [
+        "6",
+        "6",
+        "6"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Imma has 3 cats. She feeds them with 60 grams of cat food twice a day. So in one day, Imma feeds her cats 60 * 2 = 120 grams of cat food. If she has 720 grams of cat food, then it will last her 720 /"
+    },
+    {
+      "question": "Nissa hires 60 seasonal workers to play elves in her department store's Santa village. A third of th...",
+      "gold": "30",
+      "predictions": [
+        "30",
+        "30",
+        "30"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " There were originally 60 elves. If a third of them quit, that is 60 / 3 = 20 elves. So there are 60 - 20 = 40 elves left. Then 10 more quit. So 40 - 10 = 30 elves.\n#### 30"
+    },
+    {
+      "question": "Adam went to a store to buy some sweets. He bought 7 candies of type A and 10 candies of type B. One...",
+      "gold": "4",
+      "predictions": [
+        "4",
+        "4",
+        "4"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Adam bought 7 candies of type A. So the total cost of type A candies is 7 * 0.5 = 3.5 dollars. Adam also bought 10 candies of type B. So the total cost of type B candies is 10 * 0.75 = 7.5 dollars. T"
+    },
+    {
+      "question": "Elvis starts driving from his house and travels west for 5 hours. Then he turns around and travels e...",
+      "gold": "54",
+      "predictions": [
+        "54",
+        "234",
+        "468"
+      ],
+      "corrects": [
+        true,
+        false,
+        false
+      ],
+      "completion_preview": " He traveled 5 hours west at 18mph, which is 5 * 18 = 90 miles. Then he traveled 8 hours east at 18mph, which is 8 * 18 = 144 miles. Since he was traveling east, he is 144 - 90 = 54 miles east of his "
+    },
+    {
+      "question": "A hotel in the Philippines charges 1000 pesos for a 12-hour stay or 1600 pesos for a 24-hour stay. A...",
+      "gold": "250",
+      "predictions": [
+        "37420",
+        "420",
+        "10680"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Cameron stays for 14 hours. So he has to pay 14 * 70 = 980 pesos. If he pays for 24 hours, he would have to pay 24 * 1600 = 38400 pesos. The difference is 38400 - 980 = 37420. So Cameron would save 3"
+    },
+    {
+      "question": "An interior design firm offers installation for $129.00.  It includes hanging 4 mirrors, 2 shelves, ...",
+      "gold": "324",
+      "predictions": [
+        "3512",
+        "3965",
+        "369"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Angela needs 4 mirrors and 2 chandeliers. So 4 + 2 = 6 items. She also needs 20 pictures. So she needs 6 + 20 = 26 items. The cost of hanging 6 items is 129 * 6 = $774. The cost of hanging 20 picture"
+    },
+    {
+      "question": "Juan asked his neighbor, Herb, how much his house was worth. Herb answered that he paid $76,000 for ...",
+      "gold": "129200",
+      "predictions": [
+        "129200",
+        "98800",
+        "129200"
+      ],
+      "corrects": [
+        true,
+        false,
+        true
+      ],
+      "completion_preview": " If Juan's house is 30% less expensive than Herb's, then it is worth 100% - 30% = 70% of Herb's house. So, the value of Juan's house is 70% of $76,000, which is 0.7 * $76,000 = $53,200. The total valu"
+    },
+    {
+      "question": "Mike decides he wants to replace his movie collection with digital versions.  He has 600 movies.  A ...",
+      "gold": "4400",
+      "predictions": [
+        "3200",
+        "2000",
+        "2800"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " There are 600 movies in total. 600 / 3 = 200 movies are in series. He can buy series together for 6 dollars each. 200 * 6 = 1200 dollars. 600 - 200 = 400 movies are not in series. 40% of 400 movies a"
+    },
+    {
+      "question": "James wants to hang crepe-paper streamers from his backyard fence for his birthday party. His backya...",
+      "gold": "70",
+      "predictions": [
+        "35",
+        "70",
+        "35"
+      ],
+      "corrects": [
+        false,
+        true,
+        false
+      ],
+      "completion_preview": " James needs to buy a crepe paper streamer for each foot of the fence. The long side is 20 feet, so James needs 20 feet of crepe paper. The short side is 15 feet, so James needs 15 feet of crepe paper"
+    },
+    {
+      "question": "Mark buys a fleet of 12 cars for his company.  Each car sells for $20,000.  He pays 10% tax on the c...",
+      "gold": "276000",
+      "predictions": [
+        "276000",
+        "276000",
+        "36000"
+      ],
+      "corrects": [
+        true,
+        true,
+        false
+      ],
+      "completion_preview": " Mark buys 12 cars at $20,000 each, so that's 12 * $20,000 = $240,000. He pays 10% tax, so that's 10/100 * $240,000 = $24,000. He also pays $1000 registration for each car, so that's 12 * $1000 = $12,"
+    },
+    {
+      "question": "At the trip to the county-level scavenger hunt competition, 90 people were required to split into gr...",
+      "gold": "108",
+      "predictions": [
+        "12",
+        "12",
+        "12"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " 90 people are divided into 9-person groups, so there are 90 / 9 = 10 groups. 3/5 of the groups brought back seashells, so 3/5 * 10 = 6 groups brought back seashells. Each of these 6 groups brought ba"
+    },
+    {
+      "question": "How much does it cost you for lunch today at Subway if you pay $40 for a foot-long fish sub and thri...",
+      "gold": "160",
+      "predictions": [
+        "160",
+        "160",
+        "160"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " The cold-cut combo sub is 3 * $40 = $120. For the fish sub, you pay $40. So the total cost is $120 + $40 = $160.\n#### 160\n\nProblem: There are 450 students in the senior class at East High School. If "
+    },
+    {
+      "question": "Johnny took his allowance of $20 and added an extra $10 to it.  He then invested this sum of money, ...",
+      "gold": "90",
+      "predictions": [
+        "90",
+        "90",
+        "90"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Johnny started with $20. He added $10 to it, so he had 20 + 10 = $30. This sum tripled in a year, so 30 * 3 = 90 dollars.\n#### 90\n\nProblem: There are 50 kids in the pool. 10 of the kids are wearing b"
+    },
+    {
+      "question": "Two candidates are running for class representative at Sarai's school. If the winner got 3/4 of the ...",
+      "gold": "20",
+      "predictions": [
+        "20",
+        "20",
+        "20"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " The winner got 3/4 of the votes. So the loser got 1 - 3/4 = 1/4 of the votes. Since the total number of students who voted was 80, the loser got 1/4 * 80 = 20 votes.\n#### 20"
+    },
+    {
+      "question": "Helen went on a trip through Germany. She booked a hotel for 3 nights and rode the bus 7 times durin...",
+      "gold": "296",
+      "predictions": [
+        "114",
+        "856",
+        "296"
+      ],
+      "corrects": [
+        false,
+        false,
+        true
+      ],
+      "completion_preview": " Helen paid 3 nights * $80 = $240 for the hotel. One bus trip was 10% of the price of one night at the hotel, so 10% of $80 is 0.1 * $80 = $8. 7 bus trips would be $8 * 7 = $56. 58 + 56 = $114.\n#### 1"
+    },
+    {
+      "question": "In a jewelers store, the price of a gold Jewell is 4/5 times as much as the price of a diamond Jewel...",
+      "gold": "4800",
+      "predictions": [
+        "4800",
+        "4800",
+        "4800"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " The price of the gold Jewell is 4/5 times the price of the diamond Jewell. So 4/5 * 2000 = $1600. The price of the silver Jewell is $400 less than the price of gold. So 1600 - 400 = $1200. The total "
+    },
+    {
+      "question": "Nani is 8 years old. His brother is twice his age. Nani's sister is 25% younger than him. What is th...",
+      "gold": "30",
+      "predictions": [
+        "20",
+        "20",
+        "20"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Nani is 8 years old. His brother is twice his age, so he is 8 * 2 = 16 years old. Nani's sister is 25% younger than him, so she is 8 * 0.25 = 2 years younger. Nani's sister is 8 - 2 = 6 years old. Th"
+    },
+    {
+      "question": "A candle melts by 2 centimeters every hour that it burns. How many centimeters shorter will a candle...",
+      "gold": "8",
+      "predictions": [
+        "8",
+        "8",
+        "8"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " A candle melts 2 centimeters every hour. From 1:00 PM to 5:00 PM, there are 4 hours. So the candle will be 2 * 4 = 8 centimeters shorter.\n#### 8\n\nProblem: There were 263 people at the summer picnic. "
+    },
+    {
+      "question": "Bob needs to buy potting soil to fill the raised beds in his vegetable garden. He has 10 raised beds...",
+      "gold": "1920",
+      "predictions": [
+        "3",
+        "200",
+        "1920"
+      ],
+      "corrects": [
+        false,
+        false,
+        true
+      ],
+      "completion_preview": " Each raised bed is 2 feet wide by 8 feet long by 2 feet tall. So the volume of each bed is 2 * 8 * 2 = 32 cubic feet. Bob has 10 raised beds, so the total volume of soil needed is 32 * 10 = 320 cubic"
+    },
+    {
+      "question": "Benny threw bologna at his balloons.  He threw two pieces of bologna at each red balloon and three p...",
+      "gold": "6",
+      "predictions": [
+        "6",
+        "18",
+        "18"
+      ],
+      "corrects": [
+        true,
+        false,
+        false
+      ],
+      "completion_preview": " Benny threw two pieces of bologna at each red balloon and three pieces of bologna at each yellow balloon. If he threw 58 pieces of bologna in total, and twenty of the balloons were red, then 58 - (2 "
+    }
+  ]
+}

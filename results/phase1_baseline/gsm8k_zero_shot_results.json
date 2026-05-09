@@ -1,0 +1,769 @@
+{
+  "metrics": {
+    "mode": "zero_shot",
+    "benchmark": "gsm8k",
+    "n_samples": 500,
+    "pass_at_1": 0.584,
+    "pass_at_8": 0.852,
+    "think_tag_rate": 0.0,
+    "avg_think_length_words": 0.0,
+    "empty_think_rate": 0.0,
+    "avg_response_length_words": 173.36,
+    "pct_with_reasoning": 0.994,
+    "pct_with_think_tags": 0.0,
+    "generation_time_s": 2411.1804757118225,
+    "throughput_samples_per_s": 1.6589384495655102
+  },
+  "samples": [
+    {
+      "question": "Darrell and Allen's ages are in the ratio of 7:11. If their total age now is 162, calculate Allen's ...",
+      "gold": "109",
+      "predictions": [
+        "109",
+        "109",
+        "109"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " To find Allen's age 10 years from now, we need to first find their current ages. We know that Darrell's age is 7 times Allen's age, so we can set up an equation: 7x + 11x = 162, where x is the common"
+    },
+    {
+      "question": "Lorraine and Colleen are trading stickers for buttons. Each large sticker is worth a large button or...",
+      "gold": "89",
+      "predictions": [
+        "97",
+        "141",
+        "45"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Step 1: Calculate the number of small stickers Lorraine trades for large buttons.\nLorraine starts with 30 small stickers and trades 90% of them.\n90% of 30 = 0.9 * 30 = 27 small stickers\nLorraine trad"
+    },
+    {
+      "question": "Indras has 6 letters in her name. Her sister's name has 4 more letters than half of the letters in I...",
+      "gold": "13",
+      "predictions": [
+        "13",
+        "13",
+        "16"
+      ],
+      "corrects": [
+        true,
+        true,
+        false
+      ],
+      "completion_preview": " Step 1: Find the number of letters in Indras' name.\nIndras has 6 letters in her name.\n\nStep 2: Find the number of letters in Indras' sister's name.\nIndras' sister's name has 4 more letters than half "
+    },
+    {
+      "question": "Bethany can run 10 laps on the track in one hour.  Trey can run 4 more laps than Bethany.  Shaelyn c...",
+      "gold": "5",
+      "predictions": [
+        "5",
+        "5",
+        "5"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Determine how many laps Trey can run. Since Trey can run 4 more laps than Bethany, we add 4 to 10 laps. Trey's total laps = 10 + 4 = 14 laps.\n\nStep 2: Determine how many laps Shaelyn can run."
+    },
+    {
+      "question": "An ice cream truck is traveling through a neighborhood. Children from various homes have started cha...",
+      "gold": "25",
+      "predictions": [
+        "20",
+        "5",
+        "25"
+      ],
+      "corrects": [
+        false,
+        false,
+        true
+      ],
+      "completion_preview": " Step 1: Identify the number of children at the end of the first street.\nThere are 5 children chasing the ice cream truck at the end of the first street.\n\nStep 2: Determine the number of children on t"
+    },
+    {
+      "question": "Kim sleepwalks, to monitor her sleeping hours, she installs a camera in her room. Kim usually goes t...",
+      "gold": "452",
+      "predictions": [
+        "434",
+        "517",
+        "595"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Step 1: Determine the usual duration of sleep for Kim.\nKim usually goes to sleep at 10 p.m. and wakes up at 6 a.m. So, her usual sleep duration is from 10 p.m. to 6 a.m., which is 8 hours. \n\nStep 2: "
+    },
+    {
+      "question": "Gunther, the gorilla, had 48 bananas hidden under a fern branch.  When Gunther wasn't looking, Arnol...",
+      "gold": "43",
+      "predictions": [
+        "31",
+        "43",
+        "43"
+      ],
+      "corrects": [
+        false,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Gunther starts with 48 bananas.\nStep 2: Arnold steals half of the bananas, so Gunther loses 48/2 = 24 bananas.\nStep 3: Gunther adds 25 bananas, so he now has 48 - 24 + 25 = 49 bananas.\nStep 4"
+    },
+    {
+      "question": "Jonathan has 2/3 as many measuring spoons as measuring cups. If he has two dozen cups and gifts Pedr...",
+      "gold": "34",
+      "predictions": [
+        "",
+        "34",
+        "34"
+      ],
+      "corrects": [
+        false,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: First, let's find out how many measuring cups Jonathan has. Since he has two dozen cups, he has 2 x 12 = 24 cups.\nStep 2: Now, let's find out how many measuring spoons Jonathan has. Since he "
+    },
+    {
+      "question": "Martha's cat is 5 times faster than her turtle. If the cat can run 15 feet/second, how many feet can...",
+      "gold": "120",
+      "predictions": [
+        "40",
+        "40",
+        "120"
+      ],
+      "corrects": [
+        false,
+        false,
+        true
+      ],
+      "completion_preview": " To find the distance that Martha's turtle can crawl in 40 seconds, we first need to determine its crawling speed. Since the cat is 5 times faster than the turtle, we can calculate the turtle's crawli"
+    },
+    {
+      "question": "An airport has only 2 planes that fly multiple times a day. Each day, the first plane goes to Greece...",
+      "gold": "11",
+      "predictions": [
+        "22",
+        "11",
+        ""
+      ],
+      "corrects": [
+        false,
+        true,
+        false
+      ],
+      "completion_preview": " To solve this problem, we need to first determine how many trips each plane makes in a day. Let's call the total number of trips each plane makes in a day \"T\". \n\nThe first plane goes to Greece for th"
+    },
+    {
+      "question": "As Sally walked to school, she was holding the strings to 25 red balloons, 7 green balloons, and 12 ...",
+      "gold": "34",
+      "predictions": [
+        "27",
+        "27",
+        "28"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " To determine the number of balloons Sally finally carried into the school, we need to follow these steps:\n\n1. **Calculate the number of red balloons that burst:**\n   - Sally had 25 red balloons.\n   -"
+    },
+    {
+      "question": "Kira bought 3 apples, 5 bananas and 6 oranges at the grocery store. Lola ate 2 pieces of the fruit. ...",
+      "gold": "12",
+      "predictions": [
+        "12",
+        "12",
+        "12"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " 1. Kira bought a total of 3 + 5 + 6 = 14 pieces of fruit.\n2. Lola ate 2 pieces of fruit, so there are 14 - 2 = 12 pieces left.\n3. The final answer is 12."
+    },
+    {
+      "question": "I have 10 liters of orange drink that are two-thirds water and I wish to add it to 15 liters of pine...",
+      "gold": "15",
+      "predictions": [
+        "9",
+        "24",
+        "24"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Step 1: Find the amount of water in the orange drink.\nThe orange drink is two-thirds water, so it contains 2/3 * 10 liters = 6.67 liters of water.\n\nStep 2: Find the amount of water in the pineapple d"
+    },
+    {
+      "question": "Jill and her friends watch 4 movies every Saturday and half the number of movies on Sunday than on S...",
+      "gold": "24",
+      "predictions": [
+        "4",
+        "24",
+        "4"
+      ],
+      "corrects": [
+        false,
+        true,
+        false
+      ],
+      "completion_preview": " Step 1: Calculate the number of movies watched on Saturday.\nJill and her friends watch 4 movies every Saturday.\n\nStep 2: Calculate the number of movies watched on Sunday.\nOn Sunday, they watch half t"
+    },
+    {
+      "question": "Mark took a test yesterday that consisted of 75 questions. He completed the test at a rate of 5 ques...",
+      "gold": "105",
+      "predictions": [
+        "5",
+        "30",
+        "80"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Step 1: Determine the number of questions Mark could have answered in the first test.\nSince Mark completed the test at a rate of 5 questions per hour and had 8 hours to complete the test, he could ha"
+    },
+    {
+      "question": "After transferring to a new school, Amy made 20 more friends than Lily. If Lily made 50 friends, how...",
+      "gold": "120",
+      "predictions": [
+        "120",
+        "120",
+        "120"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Identify the given information\nLily made 50 friends.\n\nStep 2: Determine the difference in the number of friends between Lily and Amy\nAmy made 20 more friends than Lily.\n\nStep 3: Calculate the"
+    },
+    {
+      "question": "A basket contains 25 oranges among which 1 is bad, 20% are unripe, 2 are sour and the rest are good....",
+      "gold": "17",
+      "predictions": [
+        "22",
+        "17",
+        "18"
+      ],
+      "corrects": [
+        false,
+        true,
+        false
+      ],
+      "completion_preview": " To determine the number of good oranges, we can follow these steps:\n\n1. Calculate the number of unripe oranges: 20% of 25 oranges = (20/100) * 25 = 5 oranges.\n2. Calculate the number of sour oranges:"
+    },
+    {
+      "question": "An eraser costs $2 and a pencil costs $3. How much do 6 erasers and 8 pencils cost?...",
+      "gold": "36",
+      "predictions": [
+        "36",
+        "36",
+        "36"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " \nStep 1: Determine the cost of 6 erasers\nStep 2: Determine the cost of 8 pencils\nStep 3: Add the cost of 6 erasers and 8 pencils together to get the final answer\n\nStep 1: The cost of 6 erasers is 6 *"
+    },
+    {
+      "question": "Tyrion changes his face mask two times every time he goes out. If he goes out three times a day, how...",
+      "gold": "12",
+      "predictions": [
+        "2",
+        "6",
+        "2"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " \nStep 1: Determine the number of times Tyrion changes his mask each day.\nTyrion changes his mask two times every time he goes out, and he goes out three times a day. Therefore, he changes his mask 2 "
+    },
+    {
+      "question": "Max bought stamps at the post office. Some of the stamps had a snowflake design, some had a truck de...",
+      "gold": "45",
+      "predictions": [
+        "45",
+        "45",
+        "45"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Identify the given information.\n- Max bought 16 snowflake stamps.\n- Max bought 3 more truck stamps than snowflake stamps.\n- Max bought 9 fewer rose stamps than truck stamps.\n\nStep 2: Calculat"
+    },
+    {
+      "question": "While playing with her friends in their school playground, Katelyn saw 50 fairies flying above the n...",
+      "gold": "45",
+      "predictions": [
+        "20",
+        "45",
+        "70"
+      ],
+      "corrects": [
+        false,
+        true,
+        false
+      ],
+      "completion_preview": " To solve this problem, we need to determine the total number of fairies remaining after the given events. Let's break it down step by step:\n\n1. Katelyn saw 50 fairies flying above the nearby forest.\n"
+    },
+    {
+      "question": "Tracy used a piece of wire 4 feet long to support tomato plants in the garden. The wire was cut into...",
+      "gold": "8",
+      "predictions": [
+        "8",
+        "",
+        "8"
+      ],
+      "corrects": [
+        true,
+        false,
+        true
+      ],
+      "completion_preview": " Step 1: Convert the length of the wire to inches. Since there are 12 inches in a foot, we can convert the length of the wire as follows:\n4 feet * 12 inches/foot = 48 inches\n\nStep 2: Determine how man"
+    },
+    {
+      "question": "The school auditorium has 4 rows of seats. There are 18 seats in each row. One-fourth of the seats w...",
+      "gold": "36",
+      "predictions": [
+        "36",
+        "36",
+        ""
+      ],
+      "corrects": [
+        true,
+        true,
+        false
+      ],
+      "completion_preview": " Step 1: Calculate the total number of seats in the auditorium.\nThere are 4 rows of seats, and each row has 18 seats. So, the total number of seats is 4 rows * 18 seats/row = 72 seats.\n\nStep 2: Calcul"
+    },
+    {
+      "question": "Ellen is on a diet. She eats two carrots, a salad, and a yogurt every day. The salad costs her $6, w...",
+      "gold": "1",
+      "predictions": [
+        "1",
+        "11",
+        "1"
+      ],
+      "corrects": [
+        true,
+        false,
+        true
+      ],
+      "completion_preview": " Step 1: Identify the cost of the salad and the yogurt.\nThe cost of the salad is $6 and the cost of the yogurt is half the price of the salad. So, the cost of the yogurt is $6/2 = $3.\n\nStep 2: Calcula"
+    },
+    {
+      "question": "After scoring 14 points, Erin now has three times more points than Sara, who scored 8. How many poin...",
+      "gold": "18",
+      "predictions": [
+        "14",
+        "14",
+        "6"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Let's solve the problem step by step.\n\nStep 1: Find the total points Erin has now.\nErin now has 14 points.\n\nStep 2: Find the total points Sara has now.\nSara has 8 points.\n\nStep 3: Find the difference"
+    },
+    {
+      "question": "Scarlett found an aquarium for $10.00 at a yard sale.  At the pet store, she bought 2 bags of rocks ...",
+      "gold": "33",
+      "predictions": [
+        "33",
+        "",
+        "33"
+      ],
+      "corrects": [
+        true,
+        false,
+        true
+      ],
+      "completion_preview": " Step 1: Calculate the cost of the aquarium.\nScarlett bought the aquarium for $10.00.\n\nStep 2: Calculate the cost of the rocks.\nScarlett bought 2 bags of rocks at $2.50 each, so the total cost of the "
+    },
+    {
+      "question": "John collects garbage from 3 different apartment complexes.  The first two have 200 apartments each ...",
+      "gold": "1248",
+      "predictions": [
+        "0.4",
+        "3.6",
+        "404"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Step 1: Calculate the total number of apartments in the last apartment complex.\nThe first two apartment complexes have 200 apartments each, so together they have 200 + 200 = 400 apartments.\nThe last "
+    },
+    {
+      "question": "Jerry is rolling a six-sided die. How much more likely is it (expressed as a percentage) that he rol...",
+      "gold": "25",
+      "predictions": [
+        "25",
+        "3",
+        "3"
+      ],
+      "corrects": [
+        true,
+        false,
+        false
+      ],
+      "completion_preview": " Step 1: Determine the probability of rolling a number greater than 3.\nA six-sided die has 6 equally likely outcomes: 1, 2, 3, 4, 5, and 6.\nThe outcomes greater than 3 are 4, 5, and 6.\nThere are 3 fav"
+    },
+    {
+      "question": "Russell orders his favorite bagels online.  Each pack of bagels costs $10.00 and has 9 bagels in the...",
+      "gold": "1",
+      "predictions": [
+        "1",
+        "1",
+        "1"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Calculate the total number of bagels in 4 packs.\n4 packs * 9 bagels per pack = 36 bagels\n\nStep 2: Calculate the total cost without the discount.\n4 packs * $10.00 per pack = $40.00\n\nStep 3: Ca"
+    },
+    {
+      "question": "Ian has a board that is 40 feet long. He decides to make a cut so he can have two pieces. The longer...",
+      "gold": "32",
+      "predictions": [
+        "3",
+        "32",
+        "32"
+      ],
+      "corrects": [
+        false,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Let's denote the length of the shorter piece as 'x' feet.\nStep 2: Since the longer piece is 4 times longer than the shorter piece, we can express its length as 4x feet.\nStep 3: The sum of the"
+    },
+    {
+      "question": "Imma has 3 cats. She feeds her cats twice a day with 60 grams of cat food. How many days will 720 gr...",
+      "gold": "2",
+      "predictions": [
+        "6",
+        "2",
+        "2"
+      ],
+      "corrects": [
+        false,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Determine the total amount of cat food used per day.\nImma feeds her cats 60 grams of cat food twice a day, so the total amount used per day is 60 grams x 2 = 120 grams.\n\nStep 2: Calculate the"
+    },
+    {
+      "question": "Nissa hires 60 seasonal workers to play elves in her department store's Santa village. A third of th...",
+      "gold": "30",
+      "predictions": [
+        "30",
+        "40",
+        "30"
+      ],
+      "corrects": [
+        true,
+        false,
+        true
+      ],
+      "completion_preview": " Step 1: First, we need to find out how many elves quit after children vomit on them. Since a third of the elves quit, we need to divide 60 by 3.\n60 \u00f7 3 = 20\n\nStep 2: Next, we need to subtract the 20 "
+    },
+    {
+      "question": "Adam went to a store to buy some sweets. He bought 7 candies of type A and 10 candies of type B. One...",
+      "gold": "4",
+      "predictions": [
+        "4",
+        "4",
+        "11"
+      ],
+      "corrects": [
+        true,
+        true,
+        false
+      ],
+      "completion_preview": " Step 1: Calculate the total cost of the candies of type A.\nAdam bought 7 candies of type A, and each candy costs $0.5. So, the total cost of type A candies is 7 * $0.5 = $3.5.\n\nStep 2: Calculate the "
+    },
+    {
+      "question": "Elvis starts driving from his house and travels west for 5 hours. Then he turns around and travels e...",
+      "gold": "54",
+      "predictions": [
+        "54",
+        "234",
+        "54"
+      ],
+      "corrects": [
+        true,
+        false,
+        true
+      ],
+      "completion_preview": " Step 1: Calculate the total distance traveled west.\nSince Elvis was driving at an average speed of 18mph for 5 hours, we can calculate the distance traveled west by multiplying the speed by the time:"
+    },
+    {
+      "question": "A hotel in the Philippines charges 1000 pesos for a 12-hour stay or 1600 pesos for a 24-hour stay. A...",
+      "gold": "250",
+      "predictions": [
+        "24",
+        "24",
+        "24"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Step 1: Calculate the cost for a 24-hour stay.\nThe hotel charges 1600 pesos for a 24-hour stay.\n\nStep 2: Calculate the cost for a 12-hour stay.\nThe hotel charges 1000 pesos for a 12-hour stay.\n\nStep "
+    },
+    {
+      "question": "An interior design firm offers installation for $129.00.  It includes hanging 4 mirrors, 2 shelves, ...",
+      "gold": "324",
+      "predictions": [
+        "2",
+        "549",
+        "249"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " \nStep 1: Calculate the base cost of the installation for the items Angela needs.\nTo do this, we need to find the cost of the items she needs to install/hang, which are 6 mirrors, 2 chandeliers, and 2"
+    },
+    {
+      "question": "Juan asked his neighbor, Herb, how much his house was worth. Herb answered that he paid $76,000 for ...",
+      "gold": "129200",
+      "predictions": [
+        "129200",
+        "129200",
+        "129200"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Identify the given information.\n- Juan's neighbor, Herb, paid $76,000 for his house.\n- Juan's house is 30% less expensive than Herb's house.\n\nStep 2: Determine the value of Juan's house.\n- Si"
+    },
+    {
+      "question": "Mike decides he wants to replace his movie collection with digital versions.  He has 600 movies.  A ...",
+      "gold": "4400",
+      "predictions": [
+        "8000",
+        "",
+        "2120"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " To solve this problem, we need to calculate the cost of the movies that are not in series and the cost of the older movies, and then add them to the cost of the normal movies.\n\nStep 1: Calculate the "
+    },
+    {
+      "question": "James wants to hang crepe-paper streamers from his backyard fence for his birthday party. His backya...",
+      "gold": "70",
+      "predictions": [
+        "70",
+        "70",
+        "35"
+      ],
+      "corrects": [
+        true,
+        true,
+        false
+      ],
+      "completion_preview": " To find the total length of crepe paper needed, we need to calculate the perimeter of the rectangle. The formula for the perimeter of a rectangle is P = 2L + 2W, where L is the length and W is the wi"
+    },
+    {
+      "question": "Mark buys a fleet of 12 cars for his company.  Each car sells for $20,000.  He pays 10% tax on the c...",
+      "gold": "276000",
+      "predictions": [
+        "276000",
+        "265000",
+        "252000"
+      ],
+      "corrects": [
+        true,
+        false,
+        false
+      ],
+      "completion_preview": " Step 1: Calculate the total cost of the cars before taxes and registration.\nThe cost of each car is $20,000, so for 12 cars, the total cost is 12 * $20,000 = $240,000.\n\nStep 2: Calculate the tax on t"
+    },
+    {
+      "question": "At the trip to the county-level scavenger hunt competition, 90 people were required to split into gr...",
+      "gold": "108",
+      "predictions": [
+        "12",
+        "12",
+        "12"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " First, we need to determine the number of groups that were formed. Since 90 people were required to split into 9-person groups, we can calculate the number of groups by dividing 90 by 9. So, 90 / 9 ="
+    },
+    {
+      "question": "How much does it cost you for lunch today at Subway if you pay $40 for a foot-long fish sub and thri...",
+      "gold": "160",
+      "predictions": [
+        "160",
+        "",
+        "160"
+      ],
+      "corrects": [
+        true,
+        false,
+        true
+      ],
+      "completion_preview": " Step 1: Determine the cost of the six-inch cold-cut combo sub.\nThe cost of the six-inch cold-cut combo sub is three times the cost of the foot-long fish sub. \n\nStep 2: Calculate the cost of the six-i"
+    },
+    {
+      "question": "Johnny took his allowance of $20 and added an extra $10 to it.  He then invested this sum of money, ...",
+      "gold": "90",
+      "predictions": [
+        "80",
+        "2",
+        "120"
+      ],
+      "corrects": [
+        false,
+        false,
+        false
+      ],
+      "completion_preview": " Step 1: Add the $10 Johnny invested to his initial $20 allowance.\nStep 2: Calculate the total amount of money Johnny had after investing the $10.\nStep 3: Calculate the money he had after the investme"
+    },
+    {
+      "question": "Two candidates are running for class representative at Sarai's school. If the winner got 3/4 of the ...",
+      "gold": "20",
+      "predictions": [
+        "20",
+        "20",
+        "20"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Let's calculate the number of votes the winner got.\nTotal number of students who voted = 80\nWinner got 3/4 of the votes = 3/4 * 80 = 60 votes\n\nStep 2: Calculate the number of votes the loser "
+    },
+    {
+      "question": "Helen went on a trip through Germany. She booked a hotel for 3 nights and rode the bus 7 times durin...",
+      "gold": "296",
+      "predictions": [
+        "296",
+        "248",
+        "296"
+      ],
+      "corrects": [
+        true,
+        false,
+        true
+      ],
+      "completion_preview": " Step 1: Calculate the cost of one bus trip.\nThe cost of one bus trip is 10% of the cost of one night at the hotel. \n\nStep 2: Calculate the total cost of the hotel stays.\nHelen booked a hotel for 3 ni"
+    },
+    {
+      "question": "In a jewelers store, the price of a gold Jewell is 4/5 times as much as the price of a diamond Jewel...",
+      "gold": "4800",
+      "predictions": [
+        "4800",
+        "4800",
+        "4800"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Identify the given information.\n- The price of a diamond jewel is $2000.\n- The price of a gold jewel is 4/5 times the price of a diamond jewel.\n- The cost of a silver jewel is $400 less than "
+    },
+    {
+      "question": "Nani is 8 years old. His brother is twice his age. Nani's sister is 25% younger than him. What is th...",
+      "gold": "30",
+      "predictions": [
+        "4",
+        "30",
+        "30"
+      ],
+      "corrects": [
+        false,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Calculate the age of Nani's brother.\nNani's brother is twice Nani's age, so we need to multiply Nani's age by 2.\nAge of Nani's brother = 8 years * 2 = 16 years\n\nStep 2: Calculate the age of N"
+    },
+    {
+      "question": "A candle melts by 2 centimeters every hour that it burns. How many centimeters shorter will a candle...",
+      "gold": "8",
+      "predictions": [
+        "0",
+        "0",
+        "8"
+      ],
+      "corrects": [
+        false,
+        false,
+        true
+      ],
+      "completion_preview": " Step 1: Determine the total melting time of the candle\nThe candle melts for 5:00 PM - 1:00 PM = 4 hours.\n\nStep 2: Calculate the total melting length of the candle\nThe candle melts by 2 centimeters pe"
+    },
+    {
+      "question": "Bob needs to buy potting soil to fill the raised beds in his vegetable garden. He has 10 raised beds...",
+      "gold": "1920",
+      "predictions": [
+        "1920",
+        "1920",
+        "1920"
+      ],
+      "corrects": [
+        true,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Calculate the volume of soil needed for one raised bed.\nVolume = width x length x height\nVolume = 2 ft x 8 ft x 2 ft\nVolume = 32 cubic feet\n\nStep 2: Calculate the total volume of soil needed "
+    },
+    {
+      "question": "Benny threw bologna at his balloons.  He threw two pieces of bologna at each red balloon and three p...",
+      "gold": "6",
+      "predictions": [
+        "",
+        "6",
+        "6"
+      ],
+      "corrects": [
+        false,
+        true,
+        true
+      ],
+      "completion_preview": " Step 1: Let's denote the number of red balloons as R and the number of yellow balloons as Y. According to the problem, R = 20 and the total number of balloons in the bundle is R + Y = 58.\nStep 2: We "
+    }
+  ]
+}

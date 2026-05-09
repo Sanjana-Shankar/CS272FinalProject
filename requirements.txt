@@ -6,5 +6,7 @@ accelerate==1.1.1
 pyarrow==16.1.0
 huggingface_hub==0.36.2
 torch
+numpy
+sympy
 wandb
 tqdm

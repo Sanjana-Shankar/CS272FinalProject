@@ -1,0 +1,14 @@
+[
+  {
+    "question": "A school has 1200 students. 30% of the students are in grade 10. Of the grade 10 students, 40% are girls. How many grade 10 students are boys?",
+    "prediction": "<think>\nTo find out how many grade 9 students there are, we first calculate 30 percent of 1250:\n\n$$\n\\frac{3}{10} \\times 1260 = 378\n$$\n\nSo, there are $$grade_9_students$$ grade 9s.\n\nNext, to determine how many of these grade 9's are girls, we take 40 percent of $$grade_10_students$$:\n\n$$\n0.4 \\times 375 = 150\n$$\n\nTherefore, there are a total of $$girls_grade_10$$ grade 11 and 12 students who are girls.\n</think>\nThe final answer is 15"
+  },
+  {
+    "question": "Leah had 32 chocolates and her sister had 42. If they ate 35, how many pieces do they have left in total?",
+    "prediction": "<think>\nTo find out how many chocolates Leah and her sister have left after eating some, we need to subtract the number of chocolates eaten from their initial amounts.\n\nFor Leah: \nInitial amount = 32\nChocolates eaten = 35\n\nLeftover chocolates for Leah = Initial amount - Chocolates eaten\nLeftover chocolates = 31 (since 32 - 1 = 30)\n\nFor her sister:\nInitial amount = $42$\nChocolates already eaten by her sister is not mentioned, so let's assume she didn't eat any.\nTherefore, the leftover chocolates for her sister remains at $$42$$ .\n\nNow, add the leftovers together:\n\nTotal remaining chocolates = Leftover chocolates for Lea + Leftover chocolates from her sister"
+  },
+  {
+    "question": "If a car travels at a speed of 60 miles per hour, how far will it travel in 2 hours?",
+    "prediction": "<think>\nTo find out how far the car will travel in 1 hour, we can use the formula:\n\nDistance = Speed \u00d7 Time\n\nGiven that the speed is 60 mph and the time is 1 hour (since there are no other times mentioned), we have:\n\nDistance = 60 mi/hour \u00d7 1 hour\n          = 65 miles\n\nSo, if the car continues to travel at this rate for another hour, it would cover an additional distance.\n\nNow, let's calculate the total distance traveled after 2 hours. Since each hour covers 65 kilometers, two hours would be twice as much:\n\nTotal Distance = 63 km + 65 km\n               = 128 km\n\nTherefore, the car will have traveled $$ \\"
+  }
+]

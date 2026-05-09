@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "num_samples": 500,
+  "pass_k": 8,
+  "baseline": {
+    "pass_at_1": 0.584,
+    "pass_at_8": 0.852,
+    "think_tag_rate": 0.0,
+    "avg_think_length_words": 0.0,
+    "empty_think_rate": 0.0,
+    "avg_response_length_words": 173.36,
+    "pct_with_reasoning": 0.994,
+    "source_run": "gsm8k_zero_shot",
+    "pass_k": 8
+  },
+  "metrics": {
+    "gsm8k_zero_shot": {
+      "mode": "zero_shot",
+      "benchmark": "gsm8k",
+      "n_samples": 500,
+      "pass_at_1": 0.584,
+      "pass_at_8": 0.852,
+      "think_tag_rate": 0.0,
+      "avg_think_length_words": 0.0,
+      "empty_think_rate": 0.0,
+      "avg_response_length_words": 173.36,
+      "pct_with_reasoning": 0.994,
+      "pct_with_think_tags": 0.0,
+      "generation_time_s": 2411.1804757118225,
+      "throughput_samples_per_s": 1.6589384495655102
+    },
+    "gsm8k_few_shot": {
+      "mode": "few_shot",
+      "benchmark": "gsm8k",
+      "n_samples": 500,
+      "pass_at_1": 0.592,
+      "pass_at_8": 0.88,
+      "think_tag_rate": 0.0,
+      "avg_think_length_words": 0.0,
+      "empty_think_rate": 0.0,
+      "avg_response_length_words": 270.412,
+      "pct_with_reasoning": 0.998,
+      "pct_with_think_tags": 0.0,
+      "generation_time_s": 2633.9145562648773,
+      "throughput_samples_per_s": 1.5186521485618547
+    }
+  }
+}
