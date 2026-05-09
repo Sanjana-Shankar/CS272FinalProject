@@ -1,0 +1,18 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "benchmarks": ["gsm8k"],
+  "modes": ["zero_shot", "few_shot"],
+  "num_samples_reported": 500,
+  "pass_k_reported": 8,
+  "temperature": 0.7,
+  "batch_size": 4,
+  "max_new_tokens_reported": 512,
+  "smoke_test_defaults": {
+    "num_samples": 10,
+    "pass_k": 1,
+    "modes": ["zero_shot"],
+    "max_new_tokens": 128
+  },
+  "output_dir": "./results/baseline",
+  "seed": 42
+}
