@@ -46,6 +46,140 @@ The repository is organized by project phase:
 
 ---
 # Phase 1: Baseline Evaluation
+
+Phase 1 establishes the baseline performance of the raw `Qwen/Qwen2.5-1.5B` model before any supervised fine-tuning or GRPO post-training. The purpose of this phase is to measure how well the base model performs on mathematical reasoning tasks in zero-shot and few-shot settings.
+
+The baseline results are used as the reference point for later phases:
+
+- Phase 2: SFT warm-up
+- Phase 3: GRPO post-training
+
+## What This Phase Does
+
+- Loads the raw `Qwen/Qwen2.5-1.5B` model from Hugging Face.
+- Evaluates the model on GSM8K-style math reasoning problems.
+- Runs two prompting settings:
+  - zero-shot prompting
+  - 8-shot chain-of-thought prompting
+- Computes baseline metrics:
+  - Pass@1
+  - Pass@k
+  - average response length
+  - percentage of responses with reasoning-like steps
+  - percentage of responses containing `<think>` tags
+- Saves detailed results and summary metrics to `results/baseline/`.
+
+## Files
+
+```text
+notebooks/phase1_baseline_model.ipynb
+```
+
+Main Phase 1 notebook. It contains prompt construction, answer extraction, model inference, and baseline evaluation.
+
+```text
+scripts/phase1_baseline_model.py
+```
+
+Optional Python script export of the notebook for easier code review and command-line execution.
+
+Expected output files:
+
+```text
+results/baseline/summary.json
+results/baseline/gsm8k_zero_shot_results.json
+results/baseline/gsm8k_few_shot_results.json
+```
+
+## Setup
+
+Install dependencies from the repo root:
+
+```bash
+pip install -r requirements.txt
+```
+
+The main dependencies used in this phase are:
+
+```text
+torch
+datasets
+transformers
+accelerate
+numpy
+sympy
+wandb
+tqdm
+```
+
+## How To Run
+
+Open the notebook:
+
+```text
+notebooks/phase1_baseline_model.ipynb
+```
+
+Run the cells from top to bottom.
+
+By default, the notebook evaluates:
+
+```text
+Model: Qwen/Qwen2.5-1.5B
+Benchmark: GSM8K
+Modes: zero-shot and few-shot
+Samples: 500
+Pass@k: 8
+```
+
+The main evaluation entry point is the `main()` function in the final section of the notebook.
+
+## Running As A Script
+
+If using the Python script version, run from the repo root:
+
+```bash
+python scripts/phase1_baseline_model.py \
+  --model Qwen/Qwen2.5-1.5B \
+  --benchmarks gsm8k \
+  --mode zero_shot few_shot \
+  --num_samples 500 \
+  --pass_k 8 \
+  --output_dir ./results/baseline
+```
+
+For a faster smoke test, reduce the sample count and pass@k:
+
+```bash
+python scripts/phase1_baseline_model.py \
+  --model Qwen/Qwen2.5-1.5B \
+  --benchmarks gsm8k \
+  --mode zero_shot \
+  --num_samples 20 \
+  --pass_k 1 \
+  --output_dir ./results/baseline_smoke_test
+```
+
+## Reported Phase 1 Results
+
+The reported baseline run used 500 GSM8K examples.
+
+```text
+GSM8K zero-shot:
+Pass@1: 58.4%
+Pass@8: 85.2%
+
+GSM8K few-shot:
+Pass@1: 59.2%
+Pass@8: 88.0%
+```
+
+The base model frequently produced reasoning-like text, but it did not produce `<think>` tags because those tags were introduced later during Phase 2 SFT.
+
+## Phase 1 Takeaway
+
+The raw base model already has some mathematical reasoning ability on GSM8K, especially when sampled multiple times for Pass@8. However, its outputs are not formatted for the later GRPO pipeline. Phase 2 therefore focuses on supervised fine-tuning to encourage more structured reasoning outputs and parseable final answers.
+
 ---
 # Phase 2: SFT Warm-Up
 
