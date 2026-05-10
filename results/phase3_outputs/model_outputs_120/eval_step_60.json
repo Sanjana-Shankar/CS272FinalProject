@@ -1,0 +1,7 @@
+{
+  "eval/pass_at_1": 0.16,
+  "eval/think_tag_rate": 0.0,
+  "eval/mean_think_words": 0.0,
+  "eval/n": 100,
+  "eval/step": 60
+}
