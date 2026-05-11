@@ -12,11 +12,11 @@ CS272FinalProject/
 ├── requirements.txt
 ├── notebooks/
 │   ├── phase1_baseline_model.ipynb
-│   ├── phase2_sft_warmup.ipynb
+│   ├── phase2_final_warmup_sft_real.ipynb
 │   └── phase3_grpo_final.ipynb
 ├── scripts/
 │   ├── phase1_baseline_model.py
-│   ├── phase2_sft_warmup.py
+│   ├── phase2_final_warmup_sft_real.py
 │   └── phase3_grpo_final.py
 ├── results/
 │   ├── phase1_baseline/
