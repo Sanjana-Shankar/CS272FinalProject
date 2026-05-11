@@ -489,7 +489,6 @@ If using Google Colab, use a GPU runtime for Phase 2 and Phase 3.
 
 # Reproducibility Notes
 
-- Large checkpoints are excluded from GitHub.
 - Small JSON result files and configuration files are included for documentation.
 - Phase 1 can be rerun from the raw base model.
 - Phase 2 can regenerate the SFT checkpoint from NuminaMath-CoT.
