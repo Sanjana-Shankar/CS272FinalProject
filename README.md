@@ -13,11 +13,11 @@ CS272FinalProject/
 ├── notebooks/
 │   ├── phase1_baseline_model.ipynb
 │   ├── phase2_sft_warmup.ipynb
-│   └── phase3_grpo.ipynb
+│   └── phase3_grpo_final.ipynb
 ├── scripts/
 │   ├── phase1_baseline_model.py
 │   ├── phase2_sft_warmup.py
-│   └── phase3_grpo.py
+│   └── phase3_grpo_final.py
 ├── results/
 │   ├── phase1_baseline/
 │   ├── phase2_sft/
@@ -400,12 +400,62 @@ The evaluation checks:
 - whether the output remains in a structured reasoning format
 - whether GRPO improves correctness compared with the SFT-only checkpoint
 
+## Phase 3 Results 
+
+The GRPO-trained model shows a clear improvement over the SFT-only checkpoint in both reasoning structure and answer correctness.
+
+### Overall Metrics
+- **Accuracy (10-sample evaluation):** ~30%
+- **Training-time evaluation (Pass@1):** ~0.75 → 0.79
+- **Format compliance:** Very high (~95–98% with `<think>` and structured outputs)
+- **Average reasoning length:** ~40 words per solution
+
+### Observed Improvements
+- Consistent structured, step-by-step reasoning
+- Final answers are usually extractable and correctly formatted
+- Strong performance on straightforward arithmetic and multi-step calculations
+- GRPO successfully shifts the model toward **correctness**, not just format imitation
+
+### Remaining Limitations
+- Inconsistent performance on problems requiring deeper logical reasoning
+- Incorrect reasoning paths despite well-structured outputs
+- Occasional incomplete generations (cut-off reasoning or missing final steps)
+- Evidence of pattern-based reasoning rather than true problem understanding
+
+### Key Insight
+GRPO improves correctness compared to SFT, but gains are constrained by:
+- Small training budget (**120 steps, G=3**)
+- Limited exploration during sampling
+- Model capacity limitations (**1.5B parameters**)
+
+Overall, Phase 3 demonstrates that **reward-based training improves answer accuracy**, but scaling and better reward design are needed for robust reasoning. 
+
 ## Phase 3 Takeaway
 
-Phase 3 directly targets the limitation observed in Phase 2. SFT made the model’s outputs more structured, but it did not reliably improve correctness. GRPO adds a verifiable reward signal for exact answers, so the model is optimized toward solving the problem correctly rather than only imitating a reasoning format.
+Phase 3 directly addresses the key limitation observed in Phase 2. While SFT improved the model’s ability to produce structured, step-by-step reasoning, it did not reliably improve correctness. GRPO introduces a **verifiable reward signal based on exact answers**, shifting the objective from imitation to outcome-based learning.
 
-Because this project uses a small model and limited GPU time, the Phase 3 results should be interpreted as a small-scale reproduction attempt rather than a full DeepSeek-R1-style training run.
+As a result, the model begins to:
+- Align its reasoning toward producing **correct final answers**
+- Maintain **high format consistency** (e.g., `<think>...</think>` structure)
+- Show measurable improvements in **Pass@1 accuracy during training**
 
+However, the results also highlight important limitations:
+- The model still struggles with **multi-step logical reasoning**
+- It often follows **plausible but incorrect reasoning paths**
+- Learning is somewhat **pattern-driven**, not fully generalized
+
+These limitations are largely due to:
+- **Small training budget** (120 GRPO steps, G=3)
+- **Limited exploration** during sampling
+- **Model size constraints** (1.5B parameters)
+- Reward design focusing on **final correctness rather than step-level reasoning**
+
+Overall, Phase 3 demonstrates that **reinforcement learning with verifiable rewards can improve correctness**, but achieving robust reasoning requires:
+- Larger-scale training
+- Stronger reward design (e.g., step-level validation)
+- Increased exploration
+
+Because this project uses a relatively small model and limited GPU time, the results should be interpreted as a **scaled-down reproduction of GRPO-style training**, rather than a full DeepSeek-R1-level implementation.
 ---
 
 # Setup
